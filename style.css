@@ -2,7 +2,11 @@
 
 body{
     margin:0;
-    background-color: white;
+    background-color:#F2F1F0
+}
+
+.nav{
+    background-color: #F2F1F0;
 }
 
 html{
@@ -10,8 +14,11 @@ html{
 }
 .card{
     height:600px;
-    padding:10px
+    padding:10px;
+    font-family: 'Poppins', sans-serif;
 }
+
+
 
 .d-none{
     display: none;
@@ -30,11 +37,12 @@ li {
 
 .card{
 position: relative;
-height:600px;
-background-color: rgb(161, 159, 159);
-color: white;
+height:650px;
+background-color: white;
+color:black;
 margin-top: 10px;
 border-radius: 10px;
+
 }
 
 .newButton{

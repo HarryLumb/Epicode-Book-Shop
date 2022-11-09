@@ -84,8 +84,8 @@ const addCart = (event) => {
   const newButton = document.createElement("button");
   newButton.classList.add("newButton");
   newButton.innerHTML = "Added To Cart!";
-  let origonalCard = event.target.closest(".card");
-  origonalCard.appendChild(newButton);
+  let originalCard = event.target.closest(".card");
+  originalCard.appendChild(newButton);
   const newDiv = document.createElement("div");
   newDiv.classList.add("card");
   const checkoutButton = document.createElement("button");
@@ -96,7 +96,9 @@ const addCart = (event) => {
   DeleteCartCard.style.backgroundColor = "red";
   DeleteCartCard.style.color = "white";
   DeleteCartCard.innerHTML = "Remove From Cart";
-  newDiv.innerHTML = origonalCard.innerHTML;
+
+  newDiv.innerHTML = originalCard.innerHTML;
+
   newDiv.appendChild(checkoutButton);
   newDiv.classList.add("removeButton");
   newDiv.appendChild(DeleteCartCard);
@@ -106,7 +108,7 @@ const addCart = (event) => {
   });
 
   const emptyCart = document.getElementById('emptyCart')
-emptyCart.addEventListener('click', () =>{
+ emptyCart.addEventListener('click', () =>{
     list.remove()
 })
 
