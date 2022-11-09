@@ -5,6 +5,9 @@ body{
     background-color: white;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 .card{
     height:600px;
     padding:10px
@@ -26,7 +29,12 @@ li {
 }
 
 .card{
-position: relative
+position: relative;
+height:600px;
+background-color: rgb(161, 159, 159);
+color: white;
+margin-top: 10px;
+border-radius: 10px;
 }
 
 .newButton{
@@ -69,4 +77,29 @@ position: relative
     border-radius: 5px;
    }
 
-   
+ 
+   .removeButton .btn-primary {
+  display: none;
+  
+   }
+   .removeButton .btn-warning{
+    display: none;
+   }
+   .removeButton{
+    height:600px;
+    width:300px;
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+   }
+
+   .removeButton button{
+    border: none;
+    margin:2px;
+    border-radius: 20px;
+   }
+
+   #emptyCart{
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+   }

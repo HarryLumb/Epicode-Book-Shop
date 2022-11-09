@@ -39,7 +39,7 @@
               >Home <span class="sr-only">(current)</span></a
             >
             <a class="nav-item nav-link" href="#"></a>
-            <a class="nav-item nav-link" href="#">Cart</a>
+            <a class="nav-item nav-link" href="#cart">Cart</a>
             <a class="nav-item nav-link disabled" href="#"></a>
           </div>
         </div>
@@ -66,7 +66,7 @@
             <img class="d-block w-100  c-img " src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="First slide" />
             <div class="carousel-caption d-none d-md-block">
                 <h1>THE BOOK STORE</h1>
-                <p>...</p>
+                
               </div>
             
           </div>
@@ -74,7 +74,7 @@
             <img class="d-block w-100 c-img" src="https://images.unsplash.com/photo-1505489304219-85ce17010209?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Second slide" />
             <div class="carousel-caption d-none d-md-block">
                 <h1>THE BOOK STORE</h1>
-                <p>...</p>
+                
               </div>
             
           </div>
@@ -82,7 +82,7 @@
             <img class="d-block w-100 c-img" src="https://images.unsplash.com/38/zEk8RJdmQrqja2XwbjgJ_DSC_2368.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" alt="Third slide" />
             <div class="carousel-caption d-none d-md-block">
                 <h1>THE BOOK STORE</h1>
-                <p>...</p>
+                
               </div>
             
           </div>
@@ -109,7 +109,7 @@
     
     <div class="d-flex justify-content-center mt-5">
         <button class="btn-primary search-button">Search Books</button>
-        <input id="input" >
+        <input onchange="getFilterBooks()" id="input" >
     </div>
 
     
@@ -120,12 +120,19 @@
       </div>
     </div>
     <hr>
+    <div class="container">
+        <h1 class="text-center">CART</h1>
+        
+    <Div id="cart" class="row">
 
-    <Div id="cart"><h1 class="text-center">CART</h1>
+    </div>
+    <button id="emptyCart" class="text-center btn-danger mb-5">Empty Cart</button>
+       
+        
 
-        <div id="card cartList">
+       
 
-        </div>
+        
     </Div>
 
     <script
